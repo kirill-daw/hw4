@@ -1,11 +1,12 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задание 1");
-        Scanner scannerAge = new Scanner(System.in);
+        Scanner ageScan = new Scanner(System.in);
         System.out.print("Введите возраст человека, чтобы узнать, совершеннолетний ли он: ");
-        byte age = scannerAge.nextByte();
+        byte age = ageScan.nextByte();
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " то он совершеннолетний.");
         } else {
@@ -13,9 +14,9 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        Scanner scannerTemperature = new Scanner(System.in);
+        Scanner temperatureScan = new Scanner(System.in);
         System.out.print("Введите температуру на улице: ");
-        byte temperature = scannerTemperature.nextByte();
+        byte temperature = temperatureScan.nextByte();
         if (temperature < 5) {
             System.out.println("На улице холодно, нужно надеть шапку.");
         } else {
@@ -23,9 +24,9 @@ public class Main {
         }
 
         System.out.println("Задание 3");
-        Scanner scannerSpeed = new Scanner(System.in);
+        Scanner speedScan = new Scanner(System.in);
         System.out.println("Введите скорость вашего автомобиля: ");
-        short speed = scannerSpeed.nextShort();
+        short speed = speedScan.nextShort();
         if (speed <= 60) {
             System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно.");
         } else {
@@ -33,9 +34,9 @@ public class Main {
         }
 
         System.out.println("Задание 4");
-        Scanner scannerYearsOld = new Scanner(System.in);
+        Scanner yearsOldScan = new Scanner(System.in);
         System.out.println("Введите возраст человека, чтобы узнать его место в жизни: ");
-        byte yearsOld = scannerYearsOld.nextByte();
+        byte yearsOld = yearsOldScan.nextByte();
         boolean kidsGarden = yearsOld >= 2 && yearsOld <= 6;
         boolean school = yearsOld >= 7 && yearsOld <= 17;
         boolean university = yearsOld >= 18 && yearsOld <= 24;
@@ -54,9 +55,9 @@ public class Main {
         }
 
         System.out.println("Задание 5");
-        Scanner scanAge = new Scanner(System.in);
+        Scanner ageKidScan = new Scanner(System.in);
         System.out.println("Введите возраст ребёнка, чтобы узнать, может ли он кататься на аттракционах: ");
-        byte ageKid = scanAge.nextByte();
+        byte ageKid = ageKidScan.nextByte();
         if (ageKid < 5) {
             System.out.println("Если возраст рёбенка равен " + ageKid + ", то ему нельзя кататься на аттракционе.");
         }
@@ -68,9 +69,9 @@ public class Main {
         }
 
         System.out.println("Задание 6");
-        Scanner scanSeatsQuantity = new Scanner(System.in);
+        Scanner seatsQuantityScan = new Scanner(System.in);
         System.out.println("Введите количество занятых мест в поезде: ");
-        byte seatsQuantity = scanSeatsQuantity.nextByte();
+        byte seatsQuantity = seatsQuantityScan.nextByte();
         boolean capacity = seatsQuantity >= 0 && seatsQuantity < 102;
         if (seatsQuantity < 60) {
             System.out.println("Если в вагоне занято " + seatsQuantity + " мест, то ещё остались сидячие места.");
@@ -81,15 +82,15 @@ public class Main {
         }
 
         System.out.println("Задание 7");
-        Scanner scanOneNumber = new Scanner(System.in);
+        Scanner oneNumberScan = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int oneNumber = scanOneNumber.nextInt();
-        Scanner scanTwoNumber = new Scanner(System.in);
+        int oneNumber = oneNumberScan.nextInt();
+        Scanner twoNumberScan = new Scanner(System.in);
         System.out.println("Введите второе число: ");
-        int twoNumber = scanTwoNumber.nextInt();
-        Scanner scanThreeNumber = new Scanner(System.in);
+        int twoNumber = twoNumberScan.nextInt();
+        Scanner threeNumberScan = new Scanner(System.in);
         System.out.println("Введите третье число: ");
-        int threeNumber = scanThreeNumber.nextInt();
+        int threeNumber = threeNumberScan.nextInt();
         if (oneNumber >= twoNumber && oneNumber >= threeNumber) {
             System.out.println(oneNumber + " является наибольшим числом.");
         } else if (twoNumber >= threeNumber) {
