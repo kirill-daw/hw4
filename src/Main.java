@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задание 1");
-        Scanner ageScan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Введите возраст человека, чтобы узнать, совершеннолетний ли он: ");
-        byte age = ageScan.nextByte();
+        byte age = scanner.nextByte();
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " то он совершеннолетний.");
         } else {
@@ -14,9 +14,9 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        Scanner temperatureScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.print("Введите температуру на улице: ");
-        byte temperature = temperatureScan.nextByte();
+        byte temperature = scanner.nextByte();
         if (temperature < 5) {
             System.out.println("На улице холодно, нужно надеть шапку.");
         } else {
@@ -24,9 +24,9 @@ public class Main {
         }
 
         System.out.println("Задание 3");
-        Scanner speedScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.println("Введите скорость вашего автомобиля: ");
-        short speed = speedScan.nextShort();
+        short speed = scanner.nextShort();
         if (speed <= 60) {
             System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно.");
         } else {
@@ -34,30 +34,30 @@ public class Main {
         }
 
         System.out.println("Задание 4");
-        Scanner yearsOldScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.println("Введите возраст человека, чтобы узнать его место в жизни: ");
-        byte yearsOld = yearsOldScan.nextByte();
-        boolean kidsGarden = yearsOld >= 2 && yearsOld <= 6;
-        boolean school = yearsOld >= 7 && yearsOld <= 17;
-        boolean university = yearsOld >= 18 && yearsOld <= 24;
-        boolean job = yearsOld > 24;
-        if (kidsGarden) {
+        byte yearsOld = scanner.nextByte();
+        boolean isKidsGardenAge = yearsOld >= 2 && yearsOld <= 6;
+        boolean isSchoolAge = yearsOld >= 7 && yearsOld <= 17;
+        boolean isUniversityAge = yearsOld >= 18 && yearsOld <= 24;
+        boolean isJobAge = yearsOld > 24;
+        if (isKidsGardenAge) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в детский сад.");
         }
-        if (school) {
+        if (isSchoolAge) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в школу.");
         }
-        if (university) {
+        if (isUniversityAge) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в университет.");
         }
-        if (job) {
+        if (isJobAge) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить на работу.");
         }
 
         System.out.println("Задание 5");
-        Scanner ageKidScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.println("Введите возраст ребёнка, чтобы узнать, может ли он кататься на аттракционах: ");
-        byte ageKid = ageKidScan.nextByte();
+        byte ageKid = scanner.nextByte();
         if (ageKid < 5) {
             System.out.println("Если возраст рёбенка равен " + ageKid + ", то ему нельзя кататься на аттракционе.");
         }
@@ -69,9 +69,9 @@ public class Main {
         }
 
         System.out.println("Задание 6");
-        Scanner seatsQuantityScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.println("Введите количество занятых мест в поезде: ");
-        byte seatsQuantity = seatsQuantityScan.nextByte();
+        byte seatsQuantity = scanner.nextByte();
         boolean capacity = seatsQuantity >= 0 && seatsQuantity < 102;
         if (seatsQuantity < 60) {
             System.out.println("Если в вагоне занято " + seatsQuantity + " мест, то ещё остались сидячие места.");
@@ -82,9 +82,9 @@ public class Main {
         }
 
         System.out.println("Задание 7");
-        Scanner oneNumberScan = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int oneNumber = oneNumberScan.nextInt();
+        int oneNumber = scanner.nextInt();
         Scanner twoNumberScan = new Scanner(System.in);
         System.out.println("Введите второе число: ");
         int twoNumber = twoNumberScan.nextInt();
